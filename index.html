@@ -8,17 +8,12 @@
   <style>
   @import url('https://fonts.googleapis.com/css?family=Asar|Fira+Sans:300,400,700,800');
 body {
-  background-image: url("backgroud-1.jpg");
-  background-color: #cccccc;
-  height: 500px;
-  background-position: center;
+  background-image: url(backgroud-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  background-attachment:fixed;
+  background-position: center;
 }
-
-
-    }
     html{
       height: 100%;
     }
@@ -75,13 +70,17 @@ body {
       clear: both;
     }
     a{
-      color: white;
       margin-right: 20px;
-      color: #04141b;
-      text-decoration: underline;
+      color: #009688;
+      font-family: "playfair display", serif;
+      font-size: 16px;
+      border-bottom: 1px dotted #009688;
+      text-decoration: none;
+      font-weight: 800;
     }
     a:hover{
-      text-decoration: underline;
+      text-decoration: line-through;
+      border-bottom: none;
     }
     img{
       max-width:580px;
@@ -105,17 +104,35 @@ body {
         padding: 40px;
         margin:auto;
     }
+    .ghazal-post{
+      margin-bottom: 20px;
+    }
+    .header-links{
+      margin-bottom:20px;
+    }
   </style>
 </head>
 
 <body>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div class='container box'>
 <!-- START EDITING FROM HERE-->
-
+  <!--HEADER-->
+  <h3 style='font-size: 42px;margin-bottom: 30px;font-style: italic;'>Mujeeb Shaikh</h3>
   <!--LINKS-->
-  <a href='mujeeb.in'>Home</a>
-  <a href='http://mujeeb.in/ghazals.html'>Ghazals</a>
-
+  <div class='header-links'>
+    <a href='index.html'>Home</a>
+    <a href='ghazals.html'>Ghazals</a>
+    <a href='videos.html'>Videos</a>
+    <a href='contact.html'>Contact</a>
+  </div>
   <!--INTRODUCTION-->
   <h3 class='introduction'>दवा हूँ, ज़हर हूँ, शराब हूँ कि क्या हूँ? <br/>मैं ख़ुद पे ही मुसल्लत, अज़ाब हूँ कि क्या हूँ?</h3>
 
@@ -138,8 +155,11 @@ body {
   <!--POST-->
   <h3 class='post-title'>'Tere Siva - Ghazal'</h3> <!--TITLE of a post -->
   <h4>Ghazal that shows various dimensions/thoughts of longing for someone.</h4> <!--TEXT of a post -->
-  <img src=" Tere Siva.jpg" alt="Tere Siva-Ghazal"> <!--IMAGE in a post -->
-
+  <img class='ghazal-post' src=" Tere Siva.jpg" alt="Tere Siva-Ghazal"> <!--IMAGE in a post -->
+  <div class="fb-share-button"
+    data-href="http://mujeeb.in/Tere%20Siva.jpg"
+    data-layout="button_count">
+  </div>
   <!--LINE BREAK--><div style='height:1px; background-color:rgb(191, 221, 222);margin:40px 0px;'></div>
 
 <!-- END EDITING HERE-->
